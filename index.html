@@ -12,24 +12,137 @@
 <body>
     <div class="page">
         <header class="header">
-            <a class="button is-rounded is-shadowed" href="#">
-                <i class="icon-plus"></i><span>button</span>
-            </a>
-            <a class="button is-compact" href="#">
-                <i class="icon-plus"></i>
-            </a>
-            <button class="button">button</button>
-            <a class="button is-primary" href="#">button</a>
-            <a class="button is-secondary" href="#">button</a>
+            <div class="header-primary">
+                <div class="header-logo">
+                    <button class="button is-compact">
+                        <i class="icon-hamburguerButton"></i>
+                    </button>
+                    <a href="/" aria-current="page" aria-label="Hyrule Calendar" tabindex="-1">
+                        <img src="./images/logo131.svg" alt="">
+                    </a>
+                </div>
+                <div class="calendarStatus">
+                    <button class="button is-secondary">Hoy</button>
+                    <span class="calendarStatus-navigation">
+                        <a href="#" class="button is-compact" aria-label="Semana Anterior">
+                            <i class="icon-chevronLeft" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="button is-compact" aria-label="Siguiente semana">
+                            <i class="icon-chevronRight" aria-hidden="true"></i>
+                        </a>
+                    </span>
+                    <time class="calendarStatus-date" datetime="14-07-23">14 de Julio</time>
+                </div>
+            </div>
+            <div class="header-secondary">
+                <select class="select" name="" id="">
+                    <option value="" selected>Semana</option>
+                    <option value="">Día</option>
+                </select>
+                <a href="#user">
+                    <img src="./images/link.png" width="32" height="32" alt="">
+                </a>
+            </div>
         </header>
-        <div class="sidebar"></div>
+        <div class="sidebar">
+            <button class="button is-rounded is-shadowed">
+                <i class="icon-plus" aria-hidden="true"></i>
+                <span>Crear</span>
+            </button>
+            <div class="miniCalendar" aria-label="Calendario de navegación">
+                <div class="miniCalendar-status">
+                    <time class="miniCalendar-date" datetime="2023-07">Julio 2023</time>
+                    <div class="miniCalendar-navigation">
+                        <a class="button is-compact" href="#prevMonth" aria-label="Mes anterior">
+                            <i class="icon-chevronLeft" aria-hidden="true"></i>
+                        </a>
+                        <a class="button is-compact" aria-label="Siguiente mes" href="#nextMonth">
+                            <i class="icon-chevronRight" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="miniCalendar-header">
+                    <span class="miniCalendar-weekDay">D</span>
+                    <span class="miniCalendar-weekDay">L</span>
+                    <span class="miniCalendar-weekDay">M</span>
+                    <span class="miniCalendar-weekDay">M</span>
+                    <span class="miniCalendar-weekDay">J</span>
+                    <span class="miniCalendar-weekDay">V</span>
+                    <span class="miniCalendar-weekDay">S</span>
+                </div>
+                <div class="miniCalendar-month">
+                    <div class="miniCalendar-monthDay is-inactive">25</div>
+                    <div class="miniCalendar-monthDay is-inactive">26</div>
+                    <div class="miniCalendar-monthDay is-inactive">27</div>
+                    <div class="miniCalendar-monthDay is-inactive">28</div>
+                    <div class="miniCalendar-monthDay is-inactive">29</div>
+                    <div class="miniCalendar-monthDay is-inactive">30</div>
+                    <div class="miniCalendar-monthDay">1</div>
+                    <div class="miniCalendar-monthDay">2</div>
+                    <div class="miniCalendar-monthDay">3</div>
+                    <div class="miniCalendar-monthDay">4</div>
+                    <div class="miniCalendar-monthDay">5</div>
+                    <div class="miniCalendar-monthDay">6</div>
+                    <div class="miniCalendar-monthDay">7</div>
+                    <div class="miniCalendar-monthDay">8</div>
+                    <div class="miniCalendar-monthDay">9</div>
+                    <div class="miniCalendar-monthDay">10</div>
+                    <div class="miniCalendar-monthDay">11</div>
+                    <div class="miniCalendar-monthDay">12</div>
+                    <div class="miniCalendar-monthDay">13</div>
+                    <div class="miniCalendar-monthDay is-selected">14</div>
+                    <div class="miniCalendar-monthDay">15</div>
+                    <div class="miniCalendar-monthDay">16</div>
+                    <div class="miniCalendar-monthDay">17</div>
+                    <div class="miniCalendar-monthDay">18</div>
+                    <div class="miniCalendar-monthDay">19</div>
+                    <div class="miniCalendar-monthDay">20</div>
+                    <div class="miniCalendar-monthDay">21</div>
+                    <div class="miniCalendar-monthDay">22</div>
+                    <div class="miniCalendar-monthDay">23</div>
+                    <div class="miniCalendar-monthDay">24</div>
+                    <div class="miniCalendar-monthDay">25</div>
+                    <div class="miniCalendar-monthDay">26</div>
+                    <div class="miniCalendar-monthDay">27</div>
+                    <div class="miniCalendar-monthDay">28</div>
+                    <div class="miniCalendar-monthDay">29</div>
+                    <div class="miniCalendar-monthDay">30</div>
+                    <div class="miniCalendar-monthDay">31</div>
+                    <div class="miniCalendar-monthDay is-inactive">1</div>
+                    <div class="miniCalendar-monthDay is-inactive">2</div>
+                    <div class="miniCalendar-monthDay is-inactive">3</div>
+                    <div class="miniCalendar-monthDay is-inactive">4</div>
+                    <div class="miniCalendar-monthDay is-inactive">5</div>
+                </div>
+                <a class="button is-secondary is-users">
+                    <i class="icon-users"></i> Buscar Personas
+                </a>
+                <div class="minicalendar-calendaritos">Mis Calendarios
+                    <a class="button is-compact" href="#" aria-label="Check List">
+                        <i class="icon-chevronUp" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <a class="button is-square is-secondary" href="#">
+                    <i class="icon-checkSquare">Nek</i>
+                </a>
+                <a class="button is-square is-secondary" href="#">
+                    <i class="icon-checkSquare">Cumpleaños</i>
+                </a>
+                <a class="button is-square is-secondary" href="#">
+                    <i class="icon-checkSquare">Tareas</i>
+                </a>
+                <a class="button is-square is-secondary" href="#">
+                    <i class="icon-check">Recordatorios</i>
+                </a>
+            </div>
+        </div>
         <main class="calendar">
             <div class="currentTime"></div>
             <div class="calendar-week">
                 <div class="timezoneCell">GMT-5</div>
                 <h2 class="calendarDay">
                     <a href="./calenda-by-day.html" aria-label="Domingo 16 de Julio"> 
-                        <time datetime="16-07-23">
+                        <time datetime="23-07-16">
                             <span>DOM</span> <br>
                             <span>16</span>
                         </time>
@@ -37,7 +150,7 @@
                 </h2>
                 <h2 class="calendarDay">
                     <a href="./calenda-by-day.html" aria-label="Lunes 17 de Julio"> 
-                        <time datetime="17-07-23">
+                        <time datetime="23-07-17">
                             <span>LUN</span> <br>
                             <span>17</span>
                         </time>
@@ -45,7 +158,7 @@
                 </h2>
                 <h2 class="calendarDay">
                     <a href="./calenda-by-day.html" aria-label="Martes 18 de Julio"> 
-                        <time datetime="18-07-23">
+                        <time datetime="23-07-18">
                             <span>MAR</span> <br>
                             <span>18</span>
                         </time>
@@ -53,7 +166,7 @@
                 </h2>
                 <h2 class="calendarDay">
                     <a href="./calenda-by-day.html" aria-label="Miércoles 19 de Julio"> 
-                        <time datetime="19-07-23">
+                        <time datetime="23-07-19">
                             <span>MIE</span> <br>
                             <span>19</span>
                         </time>
@@ -61,7 +174,7 @@
                 </h2>
                 <h2 class="calendarDay is-selected">
                     <a href="./calenda-by-day.html" aria-label="Jueves 20 de Julio"> 
-                        <time datetime="20-07-23">
+                        <time datetime="23-07-20">
                             <span>JUE</span> <br>
                             <span>20</span>
                         </time>
@@ -69,7 +182,7 @@
                 </h2>
                 <h2 class="calendarDay">
                     <a href="./calenda-by-day.html" aria-label="Viernes 21 de Julio"> 
-                        <time datetime="21-07-23">
+                        <time datetime="23-07-21">
                             <span>VIE</span> <br>
                             <span>21</span>
                         </time>
@@ -77,7 +190,7 @@
                 </h2>
                 <h2 class="calendarDay">
                     <a href="./calenda-by-day.html" aria-label="Sabado 22 de Julio"> 
-                        <time datetime="22-07-23">
+                        <time datetime="23-07-22">
                             <span>SAB</span> <br>
                             <span>22</span>
                         </time>
@@ -299,5 +412,65 @@
             </div>
         </main>
     </div>
+    <dialog class="modal">
+        <form class="createTask">
+            <div class="input is-outstanding">
+                <div class="input-body">
+                    <input required name="title" type="text" placeholder="Añade un título">
+                </div>
+            </div>
+            <div class="input">
+                <i class="icon-clock"></i>
+                <div class="input-body">
+                    <input type="date" name="date" required>
+                    <input type="time" name="time-start" required>
+                    <input type="time" name="time-end" required>
+                </div>
+            </div>
+            <div class="input">
+                <i class="icon-users"></i>
+                <div class="input-body">
+                    <input type="text" list="guests" name="guests" placeholder="Agregar Invitados" required>
+                    <datalist id="guests">
+                        <option value="Boky"></option>
+                        <option value="Max"></option>
+                        <option value="Tommy"></option>
+                        <option value="Mazapán"></option>
+                        <option value="Jerry"></option>
+                        <option value="Microbito"></option>
+                    </datalist>
+                </div>
+            </div>
+            <div class="input">
+                <i class="icon-gps"></i>
+                <div class="input-body">
+                    <input name="location" type="text" placeholder="Agregar Ubicación">
+                </div>
+            </div>
+            <div class="input">
+                <i class="icon-text"></i>
+                <div class="input-body">
+                    <input type="file" multiple>
+                </div>
+            </div>
+            <div class="input">
+                <i class="icon-text"></i>
+                <div class="input-body">
+                    <textarea name="description" placeholder="Agregar la descripción" id="" cols="40" rows="2"></textarea>
+                </div>
+            </div>
+        </form>
+        <div class="modal-actions">
+            <button class="button">
+                Cancelar
+            </button>
+            <button class="button is-primary">
+                Guardar
+            </button>
+        </div>
+    </dialog>
+    <script>
+        document.querySelector('.modal').showModal()
+    </script>
 </body>
 </html>

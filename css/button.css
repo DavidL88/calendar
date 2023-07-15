@@ -63,3 +63,49 @@
 .button.is-shadowed {
     box-shadow: 0.08734026551246643px 2.5244154930114746px 7.496296405792236px 0px rgba(0, 0, 0, 0.07), 0.4128812551498413px 11.933600425720215px 29.30370330810547px 0px rgba(0, 0, 0, 0.04), 1.0719032287597656px 30.981462478637695px 92px 0px rgba(0, 0, 0, 0.03);
 }
+
+.button.is-users {
+    margin-block: 1.5rem;
+    display: flex-end;
+    padding-inline-start: 1rem;
+    padding-inline-end: 2.4rem;
+    padding-block: 0.625rem;
+    border: none;
+    background-color: var(--gray10);
+    white-space: nowrap;
+}
+
+.icon-users::before {
+    padding-inline-end: .5rem;
+}
+
+.icon-clock::before {
+    padding-inline-end: .5rem;
+}
+
+.icon-gps::before {
+    padding-inline-end: .5rem;
+}
+
+.icon-text::before {
+    padding-inline-end: .5rem;
+}
+
+.button.is-users::selection {
+    background: none;
+}
+
+.button.is-square.is-secondary {
+    border: none;
+    display: flex;
+    white-space: nowrap;
+    font: var(--body1-regular);
+}
+
+.icon-checkSquare::before {
+    padding-inline-end: .25rem;
+}
+
+.icon-check::before {
+    padding-inline-end: .25rem;
+}
