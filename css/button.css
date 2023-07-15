@@ -23,6 +23,7 @@
 
 .button.is-secondary {
     border: 1px solid var(--gray20);
+    background: var(--gray10);
 }
 
 .button.is-primary:hover,
@@ -43,6 +44,7 @@
 
 .button.is-rounded {
     border-radius: 1.25rem;
+    background: var(--gray10);
     color: var(--blue10);
 }
 
@@ -108,4 +110,8 @@
 
 .icon-check::before {
     padding-inline-end: .25rem;
+}
+
+a.button.is-square.is-secondary {
+    margin-block-end: .5rem;
 }
