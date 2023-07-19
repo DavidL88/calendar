@@ -111,6 +111,7 @@
 
 .icon-check::before {
     padding-inline-end: .25rem;
+    font-size: 1.5rem;
 }
 
 a.button.is-square.is-secondary {
