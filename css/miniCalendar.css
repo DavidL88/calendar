@@ -60,3 +60,41 @@
     font: var(--body1-regular);
 }
 
+.homework {
+    max-inline-size: 12.25rem;
+}
+
+.homeworkTitle {
+    font: var(--body1-medium);
+    color: var(--gray20);
+    display: flex;
+    justify-content: space-between;
+    padding-block-end: .5rem;
+}
+
+.homeworkList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.homeworkList-list {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding-block-end: 0.75rem;
+}
+
+.homeworkTitle i {
+    color: var(--gray50);
+    font-size: 1.5rem;
+}
+
+.homeworkList i {
+    font-size: 1.5rem;
+}
+
+.homeworkList span {
+    font: var(--body1-regular);
+    flex: 1;
+}
